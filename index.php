@@ -9,7 +9,7 @@
 					<ul class="slides">
 						<?php $my_query = new WP_Query('cat='.$options['mts_featured_cat'].'&posts_per_page=3'); while ($my_query->have_posts()) : $my_query->the_post(); ?>      
 						<li>
-							<?php the_post_thumbnail('slider',array('title' => '')); ?>        
+							<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('slider',array('title' => '')); ?></a>       
 							<p class="flex-caption">
 								<a href="<?php the_permalink() ?>"><span class="slidertitle"><?php the_title(); ?></span></a>
 								<span class="slidertext"><?php echo excerpt(20); ?></span> 
@@ -24,17 +24,7 @@
 		<article class="article">
 			<div id="content_box" class="home_page">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					<div class="post excerpt">                        	
-						<header>
-							<h2 class="title">
-								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
-							</h2>
-							<div class="post-info post-info_custom">
-								<div class="author_mt hp_meta"><span class="mt_icon"> </span><?php the_time('F d.Y.'); ?></div>
-								<div class="comment_mt hp_meta"><span class="mt_icon"> </span> <a href="<?php comments_link(); ?>"><?php comments_number('0 Comment','1 Comment','% Comment(s)'); ?></a></div>
-								<div class="cat_mt hp_meta"><span class="mt_icon"> </span> <?php the_author_posts_link(); ?> </div>                                    
-							</div>
-						</header><!--.header-->                            
+					<div class="post excerpt"> 
 						<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="nofollow" id="featured-thumbnail">
 							<?php if ( has_post_thumbnail() ) { ?> 
 								<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail('featured',array('title' => '')); echo '</div>'; ?>								
@@ -42,10 +32,22 @@
 								<div class="featured-thumbnail"><img width="200" height="200" src="<?php echo get_template_directory_uri(); ?>/images/nothumb.png" class="attachment-featured wp-post-image" alt="<?php the_title(); ?>"></div>                      
 							<?php } ?>
 						</a>
+						<header>
+							<h2 class="title">
+								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
+							</h2>
+							<span class="cust_category"><?php _e('Category: ','mythemeshop'); ?><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?> </span>
+						</header>
+						<!--.header--> 
 						<div class="post-content image-caption-format-1">
 							<span class="excerpt_overlap"><?php echo excerpt(56);?></span>
 						</div>
-						<span class="cust_category"><?php _e('Category: ','mythemeshop'); ?><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?> </span>
+						<div class="post-info post-info_custom">
+								<div class="author_mt hp_meta"><span class="mt_icon"> </span><?php the_time('F d.Y.'); ?></div>
+								<div class="comment_mt hp_meta"><span class="mt_icon"> </span> <a href="<?php comments_link(); ?>"><?php comments_number('0 Comment','1 Comment','% Comment(s)'); ?></a></div>
+								<div class="cat_mt hp_meta"><span class="mt_icon"> </span> <?php the_author_posts_link(); ?> </div>                                    
+						</div>
+						
 						<div id="hover_line"></div>
 					</div><!--.post excerpt-->
 				<?php endwhile; else: ?>
