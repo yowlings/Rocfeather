@@ -35,8 +35,7 @@
 						<header>
 							<h2 class="title">
 								<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a>
-							</h2>
-							<span class="cust_category"><?php _e('Category: ','mythemeshop'); ?><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?> </span>
+							</h2>							
 						</header>
 						<!--.header--> 
 						<div class="post-content image-caption-format-1">
@@ -45,7 +44,8 @@
 						<div class="post-info post-info_custom">
 								<div class="author_mt hp_meta"><span class="mt_icon"> </span><?php the_time('F d.Y.'); ?></div>
 								<div class="comment_mt hp_meta"><span class="mt_icon"> </span> <a href="<?php comments_link(); ?>"><?php comments_number('0 Comment','1 Comment','% Comment(s)'); ?></a></div>
-								<div class="cat_mt hp_meta"><span class="mt_icon"> </span> <?php the_author_posts_link(); ?> </div>                                    
+								<div class="cat_mt hp_meta"><span class="mt_icon"> </span> <?php the_author_posts_link(); ?> </div>
+								<span class="cust_category"><?php _e('Category: ','mythemeshop'); ?><?php $category = get_the_category(); echo '<a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a>';?> </span>                                    
 						</div>
 						
 						<div id="hover_line"></div>
