@@ -186,7 +186,7 @@ a:link, a:visited, a:active { text-decoration: none }
     width: 100%;
     border-top: 0px;
     padding-top: 30px;
-    margin-top: 65px;
+    margin-top: 20px;
     /* background: #fff; */
     min-height: 100px;
     float: left;
@@ -448,7 +448,7 @@ body > header {
 .flex-container {
     width: 100% !important;
     background: #fff;
-    max-width: 620px;
+    /* max-width: 620px; */
 }
 .post {
     float: left;
