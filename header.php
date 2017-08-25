@@ -4,6 +4,7 @@
 <head>
 	<title><?php wp_title(''); ?></title>
 	<?php mts_meta(); ?>
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php wp_enqueue_script("jquery"); ?>

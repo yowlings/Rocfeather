@@ -37,6 +37,7 @@
 										</div>
 									<?php } ?>
 								<?php } ?> 
+								<!-- shareit -->
 								<?php if($options['mts_social_buttons'] == '1') { ?>
 									<div class="shareit">
 										<?php if($options['mts_twitter'] == '1') { ?>
