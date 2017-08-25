@@ -69,11 +69,7 @@ $args['dev_mode'] = false;
 //$args['intro_text'] = __('<p>This is the HTML which can be displayed before the form, it isnt required, but more info is always better. Anything goes in terms of markup here, any HTML.</p>', 'nhp-opts');
 
 //Setup custom links in the footer for share icons
-$args['share_icons']['twitter'] = array(
-										'link' => 'http://twitter.com/mythemeshopteam',
-										'title' => 'Follow Us on Twitter', 
-										'img' => NHP_OPTIONS_URL.'img/glyphicons/twitter.png'
-										);
+
 $args['share_icons']['linked_in'] = array(
 										'link' => 'http://www.facebook.com/mythemeshop',
 										'title' => 'Like us on Facebook', 
@@ -163,12 +159,7 @@ $sections[] = array(
 						'sub_desc' => __('Enter your FeedBurner\'s URL here, ex: <strong>http://feeds.feedburner.com/mythemeshop</strong> and your main feed (http://example.com/feed) will get redirected to the FeedBurner ID entered here.)', 'nhp-opts'),
 						'validate' => 'url'
 						),
-					array(
-						'id' => 'mts_twitter_username',
-						'type' => 'text',
-						'title' => __('Twitter Username', 'nhp-opts'),
-						'sub_desc' => __('Enter your Username here.', 'nhp-opts')
-						),
+					
 					array(
 						'id' => 'mts_header_code',
 						'type' => 'textarea',
@@ -436,14 +427,7 @@ $sections[] = array(
 						'options' => array('0' => 'Off','1' => 'On'),
 						'sub_desc' => __('Enable or Disable the Floating social sharing buttons on single posts.', 'nhp-opts'),
 						'std' => '1'
-						),
-					array(
-						'id' => 'mts_twitter',
-						'type' => 'button_set',
-						'title' => __('Twitter', 'nhp-opts'), 
-						'options' => array('0' => 'Off','1' => 'On'),
-						'std' => '1'
-						),
+						),					
 					array(
 						'id' => 'mts_gplus',
 						'type' => 'button_set',

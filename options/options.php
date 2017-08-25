@@ -739,13 +739,13 @@ echo '<span class="headtext">Welcome to your theme\'s mission control center.</s
 				
 				echo '<div id="nhp-opts-footer">';
 				
-					if(isset($this->args['share_icons'])){
-						echo '<div id="nhp-opts-share">';
-						foreach($this->args['share_icons'] as $link){
-							echo '<a href="'.$link['link'].'" title="'.$link['title'].'" target="_blank"><img src="'.$link['img'].'"/></a>';
-						}
-						echo '</div>';
-					}
+					// if(isset($this->args['share_icons'])){
+					// 	echo '<div id="nhp-opts-share">';
+					// 	foreach($this->args['share_icons'] as $link){
+					// 		echo '<a href="'.$link['link'].'" title="'.$link['title'].'" target="_blank"><img src="'.$link['img'].'"/></a>';
+					// 	}
+					// 	echo '</div>';
+					// }
 					
 					
 					echo '<input type="submit" name="'.$this->args['opt_name'].'[defaults]" value="'.__('Reset to Defaults', 'nhp-opts').'" class="button-secondary" />';

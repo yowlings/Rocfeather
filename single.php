@@ -40,25 +40,14 @@
 								<!-- shareit -->
 								<?php if($options['mts_social_buttons'] == '1') { ?>
 									<div class="shareit">
-										<?php if($options['mts_twitter'] == '1') { ?>
-												<!-- Twitter -->
-												<span class="share-item twitterbtn">
-												<a href="https://twitter.com/share" class="twitter-share-button" data-via="<?php echo $options['mts_twitter_username']; ?>">Tweet</a>
-												</span>
-										<?php } ?>
+										
 										<?php if($options['mts_gplus'] == '1') { ?>
 												<!-- GPlus -->
 												<span class="share-item gplusbtn">
 												<g:plusone size="medium"></g:plusone>
 												</span>
 										<?php } ?>
-										<?php if($options['mts_facebook'] == '1') { ?>
-												<!-- Facebook -->
-												<span class="share-item facebookbtn">
-												<div id="fb-root"></div>
-												<div class="fb-like" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false"></div>
-												</span>
-										<?php } ?>
+										
 										<?php if($options['mts_linkedin'] == '1') { ?>
 												<!--Linkedin -->
 												<span class="share-item linkedinbtn">
