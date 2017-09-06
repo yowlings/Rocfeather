@@ -1112,8 +1112,13 @@ nav #searchform fieldset {
     transition: all 0.25s linear;
     color: #aaa;
     padding-left: 0;
+    width: 48%;
+    max-height: 80px;
     background: none;
-    margin-bottom: 10px;
+    float: left;
+    margin-left: 5px;
+    
+    margin-bottom: 5px;
 }
 .advanced-recent-posts p, .popular-posts p, .category-posts p { margin: 0 }
 .category-posts a, .advanced-recent-posts a { display: block }

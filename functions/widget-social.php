@@ -35,7 +35,6 @@ class Social_Profile_Icons_Widget extends WP_Widget {
 			'pinterest'		 => '',
 			'rss'			 => '',
 			'stumbleupon'		 => '',
-			'twitter'		 => '',
 			'youtube'		 => '',
 			'flickr'		 => '',
 			'lastfm'		 => '',
@@ -78,10 +77,6 @@ class Social_Profile_Icons_Widget extends WP_Widget {
 			'stumbleupon' => array(
 				'label'	  => __( 'StumbleUpon URI', 'mythemeshop' ),
 				'pattern' => '<li class="social-stumbleupon"><a title="StumbleUpon" href="%s" %s>StumbleUpon</a></li>',
-			),
-			'twitter' => array(
-				'label'	  => __( 'Twitter URI', 'mythemeshop' ),
-				'pattern' => '<li class="social-twitter"><a title="Twitter" href="%s" %s>Twitter</a></li>',
 			),
 			'youtube' => array(
 				'label'	  => __( 'YouTube URI', 'mythemeshop' ),

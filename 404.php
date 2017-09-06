@@ -6,13 +6,12 @@
 				<div id="content" class="hfeed">
 					<header>
 						<div class="title">
-							<h1><?php _e('Error 404 Not Found', 'mythemeshop'); ?></h1>
+							<h1><?php get_search_form();?></h1>
 						</div>
 					</header>
-					<div class="post-content">
-						<p><?php _e('Oops! We couldn\'t Found this Page.', 'mythemeshop'); ?></p>
-						<p><?php _e('Please check your URL or use the search form below.', 'mythemeshop'); ?></p>
-						<?php get_search_form();?>
+					<div class="post-content">						
+						
+						<img src="<?php echo get_template_directory_uri(); ?>/images/404.jpg">
 					</div><!--.post-content--><!--#error404 .post-->
 				</div><!--#content-->
 			</div><!--#content_box-->
