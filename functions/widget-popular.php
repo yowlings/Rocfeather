@@ -51,7 +51,7 @@ class mts_pp_Widget extends WP_Widget {
 		<!-- BEGIN WIDGET -->
 		<div class="pp-wrapper">
 			
-			<h3><span><?php _e('Popular Posts', 'mythemeshop'); ?></span></h3>
+			<h3><span><?php _e('热门博客', 'mythemeshop'); ?></span></h3>
 			<ul class="popular-posts">
 					<?php
 					$popular_posts = new WP_Query('showposts='.$posts.'&orderby=comment_count&order=DESC');
