@@ -291,7 +291,7 @@ ol.flex-control-nav {
     float: left;
     margin-right: 10px;
     margin-top: 10px;
-    color: #fff;
+    color: #000;
 }
 
 .slidertext {
@@ -301,4 +301,5 @@ ol.flex-control-nav {
     padding-right: 10px;
     float: left;
     padding-top: 5px;
+    color: #444
 }
