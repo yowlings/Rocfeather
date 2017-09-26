@@ -510,7 +510,7 @@ body > header {
     margin-bottom: 30px;
     background-color: #fff;
     /* padding: 20px; */
-    width: auto;
+    /* width: auto; */
     /* border: 1px solid #e9e9e9; */
     -webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.22);
     -moz-box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.22);
@@ -583,7 +583,7 @@ body > header {
     color: #868686;
     text-transform: capitalize;
 }
-#content_box .excerpt { max-width: 578px }
+#content_box .excerpt { max-width: 95% }
 .wp-post-image { float: left }
 .advanced-recent-posts .wp-post-image { min-width: 65px }
 .featured-thumbnail {

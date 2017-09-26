@@ -103,7 +103,7 @@ include("functions/widget-ad300.php");
 include("functions/widget-tabs.php");
 
 // Add the Latest Tweets Custom Widget
-include("functions/widget-tweets.php");
+//include("functions/widget-tweets.php");
 
 // Add the Theme Shortcodes
 include("functions/theme-shortcodes.php");
@@ -115,7 +115,7 @@ include("functions/widget-recentposts.php");
 include("functions/widget-popular.php");
 
 // Add Facebook Like box Widget
-include("functions/widget-fblikebox.php");
+//include("functions/widget-fblikebox.php");
 
 // Add Subscribe Widget
 include("functions/widget-subscribe.php");
