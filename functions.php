@@ -31,12 +31,12 @@ function mts_add_scripts() {
 	
 	//replace jQuery with Google hosted version
 	wp_deregister_script('jquery'); 
-		wp_register_script('jquery', ("//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"), false, '1.7.1'); 
+		wp_register_script('jquery', ("//cdn.bootcss.com/jquery/1.8.3/jquery.min.js"), false, '1.7.1'); 
 	wp_enqueue_script('jquery');	
 	
 	//replace jQuery UI with Google hosted version
 	wp_deregister_script('jquery-ui'); 
-		wp_register_script('jquery-ui', ("//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"), false, '1.8.16'); 
+		wp_register_script('jquery-ui', ("//cdn.bootcss.com/jqueryui/1.9.2/jquery-ui.min.js"), false, '1.8.16'); 
 	wp_enqueue_script('jquery-ui');
 	
 	// Site wide js
